@@ -61,5 +61,14 @@ echo ${name[1]}
 echo ${name[*]}
 echo ${#name[*]}
 
+----------------------------------------------------------------
+
+<함수 정의>
+
+함수명() { commands; commands; }
+function 함수명 { commands; commands; }
+function 함수명() { commands; commands; }
+
+{ } 옆 공백 필수 
 
 

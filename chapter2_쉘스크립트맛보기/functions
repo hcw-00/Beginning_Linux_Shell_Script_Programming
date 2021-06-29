@@ -1,0 +1,17 @@
+function hello { echo "$LOGNAME님 안녕하세요. 오늘은 $(date +%Y"년 "%m"월 "%d"일") 입니다."; }
+
+function numbers() {
+	echo "argument의 갯수 $#" # 작동 X
+	num=0
+	if [ $# -eq 0 ]
+	then
+		tar=10
+	else
+		tar=$1
+	fi
+	while [ $num -lt $tar ] # or (( $num < $tar ))
+	do
+		echo $num
+		let num+=1 #num=$(($num+1))
+	done
+}
